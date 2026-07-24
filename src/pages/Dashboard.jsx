@@ -71,7 +71,7 @@ export const Dashboard = () => {
   const [isRenewalPopupOpen, setIsRenewalPopupOpen] = useState(false);
 
   useEffect(() => {
-    const daysUntilRenewal = UserProfile?.activePackage?.daysUntilRenewal;
+    const daysUntilRenewal = 40;
     if (daysUntilRenewal !== undefined && daysUntilRenewal !== null && daysUntilRenewal !== "") {
       const days = Number(daysUntilRenewal);
       if (!isNaN(days) /* && days <= 30 */) { // TEMP FOR TESTING: Removed days <= 30 check
